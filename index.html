@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/x-icon" href="Logo.png">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8425787483843575"
-     crossorigin="anonymous"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family:'Courier New', Courier, monospace}
 .w3-row-padding img {margin-bottom: 12px}
@@ -61,30 +59,69 @@ b {
 }
 
 
-.scrollmenu {
-    background-color: white;
-    width: 100%;
-    height:255px;
- overflow-x: scroll;
-    display: flex;
-    margin-top: 1%;
-  }
-  #row {
-  white-space: nowrap;
-}
-#row > div {
-  background: whitesmoke;
-  display: inline-block;
-  height: 80%;
-  width: 30%;
-  border-radius:10px;
-}
-#row > div + div {
-  margin-left: 10px
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-h5 {
-  font-size: 200%;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@keyframes checked-anim {
+    50% {
+        width: 3000px;
+        height: 3000px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+@keyframes not-checked-anim {
+    0% {
+        width: 3000px;
+        height: 3000px;
+    }
 }
 
 
@@ -92,10 +129,14 @@ h5 {
 </head>
 <body>
 
-  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-    <div class="bgimg"></div>
-  </nav>
   
+
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg">
+
+  
+      </div>
+  </nav>
 
 <div class="w3-main w3-padding-large" style="margin-left:40%">
 
@@ -105,47 +146,50 @@ h5 {
    
     <center> <h1 style="font-size: 40px;"><b>Myschoolway</b></h1></center>
     <p>Study tool,School menegment system</p>
- <a href="https://apps.volt.build/869be728-9e35-416f-b92f-4531a8d4f77b/android.debug.apk">
+ <a href="https://apps.volt.build/ab06a546-1108-4b1b-99ad-4a7919c2b45e/android.debug.apk">
     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top" style="border-radius: 5px;width: 250px;">
         <i class="fa fa-download"></i> Download App
       </button>
    </a>
-   <br>
-   <br>
+<br>
    <a href="https://discord.gg/CyS7senk83">
     <button class="w3-button" style="border-radius: 5px;width: 250px;background-color: rgb(98, 0, 255);color: whitesmoke;">
            Discord
       </button>
    </a>
-   <br>
-   <br>
-
 
   </header>
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>ჩვენს შესახებ</h2>
     <hr class="w3-opacity">
-    <p >MySchoolWay არის სერვისი,რომელიც ეხმარება ადამიანებს სასკოლო გრაფიკის ორგანიზებასა და თვითგანათლების ტესტირებაში.აპლიკაციის გამოყენება ჯერჯერობით შესაძლებელია მხოლოდ Android მოწყობილობაზე.ხარვეზის აღმოჩენის შემთხვევაში გთხოვთ <a href="report.html">დაარეპორტოთ</a> ხარვეზი.აპლიკაციის გადმოსაწერად კი მიყევით <div class="dropdown">
-        <p class="dropbtn" style="margin-top:-15%;"><a href="#">ინსტრუქციას</a>.<p>
-        <div class="dropdown-content">
-         <ul>
-           <li>დააკლიკეთ Download app ღილაკს!</li>
-           <li>შედით ბრაუზერის პარამეტრებში.</li>
-           <li>მიუთითეთ Downloads.</li>
-           <li>გადმოწერის შემდეგ გახსენით ფაილი!</li>
-           <li>გილოცავთ,თქვენ წარმატებით დააინსტალირეთ Myschoolway app!</li>
-         </ul>
-        </div>
-        <br>
-        </div>
-       </p>
-       <p>არ არის Myschoolway app თქვენს სკოლაში? მაშინ დაგვიკავშირდით!🚀
-        <br>
-        <b>E-mail: myschoolwayapp@gmail.com
-        </b>
-       </p>
-      <hr>
-      <br>
+<div class="about">
+  <p> MySchoolWay არის სერვისი,რომელიც ეხმარება ადამიანებს სასკოლო გრაფიკის ორგანიზებასა და თვითგანათლების ტესტირებაში.აპლიკაციის გამოყენება ჯერჯერობით შესაძლებელია მხოლოდ Android მოწყობილობაზე.ხარვეზის აღმოჩენის შემთხვევაში გთხოვთ <a href="report.html">დაარეპორტოთ</a> ხარვეზი.აპლიკაციის გადმოსაწერად კი მიყევით<div class="dropdown">
+    <p class="dropbtn" style="margin-top:-15%;"><a href="#">ინსტრუქციას.</a><p>
+      <div class="dropdown-content">
+        <ul>
+          <li>დააკლიკეთ Download app ღილაკს!</li>
+          <li>შედით ბრაუზერის პარამეტრებში.</li>
+          <li>მიუთითეთ Downloads.</li>
+          <li>გადმოწერის შემდეგ გახსენით ფაილი!</li>
+          <li>გილოცავთ,თქვენ წარმატებით დააინსტალირეთ Myschoolway app!</li>
+        </ul>
+       </div>
+       <br>
+       </div>
+      </p>
+   <p>არ არის Myschoolway app თქვენს სკოლაში? მაშინ დაგვიკავშირდით!🚀
+    <br>
+    <b>E-mail: myschoolwayapp@gmail.com
+    </b>
+    <br>
+   <a href="Donation.html">
+    <b>donation link
+    </b>
+   </a>
+   </p>
+  <hr>
+  <br>
+</div>
       <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
@@ -155,6 +199,18 @@ function myFunction() {
     x.style.display = "none";
   }
 }
+
+function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
 </script>
 
 </body>
