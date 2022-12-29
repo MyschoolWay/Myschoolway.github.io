@@ -124,6 +124,127 @@ b {
     }
 }
 
+/*Sidebar*/
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #d6d3d3;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 45%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  overflow-y: scroll;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: white;
+}
+
+#scrolly{
+            width: 100%;
+            height: auto;
+            margin-top: -2%;
+            overflow: auto;
+            overflow-y: hidden;
+            overflow-x: visible;
+            margin: 0 auto;
+            white-space: nowrap
+        }
+
+      
+
+        iframe {
+          margin: 20px 10px;
+          display: inline;
+          width: 300px;
+          height: 200px;
+        }
+
+
+/*dropdown*/
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
 
 </style>
 </head>
@@ -133,7 +254,67 @@ b {
 
   <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
     <div class="bgimg">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+         <h3 style="margin-left: 5%;color:rgb(98, 0, 255);">უახლესი ვიდეოები</h2>
+          <center><hr style="width: 90%;border-style: groove;"></center>
+          <div id='scrolly'>
+      <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   <center><hr style="width: 90%;border-style: groove;"></center>
+    <br>
+    <br>
+    <h3 style="margin-left: 5%;margin-top:-3%;color:rgb(98, 0, 255);">საგნობრივი საძიებელი</h2>
 
+  <div style="margin-left:5%">
+    <div class="dropdown">
+      <button class="dropbtn" style="margin-left: 8%;">ფიზიკა</button>
+      <div class="dropdown-content">
+        <a href="" onclick="alert('არხი მალე დაემატება')">კუთრი სითბოტევადობა</a>
+        <a href="" onclick="alert('არხი მალე დაემატება')">ერთგანზომილებიანი მოძრაობა</a>
+        <a href="" onclick="alert('არხი მალე დაემატება')">ორგანზომილებიანი მოძრაობა</a>
+        <a href="" onclick="alert('არხი მალე დაემატება')">მოძრაობა წრეწირზე</a>
+        <a href="" onclick="alert('არხი მალე დაემატება')">მოძრაობა წრეწირზე</a>
+        <a href="" onclick="alert('არხი მალე დაემატება')">ელექტრული ველი</a>
+        <a href="" onclick="alert('არხი მალე დაემატება')">კულონის კანონი</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">ქიმია</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">მათემატიკა</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">ბიოლოგია</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+</ul>
+            </div>
   
       </div>
   </nav>
@@ -145,7 +326,7 @@ b {
     <img src="Telescope.png" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1110" height="1333">
    
     <center> <h1 style="font-size: 40px;"><b>Myschoolway</b></h1></center>
-    <p>Study tool,School menegment system</p>
+    <p>Study tool,School managment system</p>
  <a href="https://apps.volt.build/ab06a546-1108-4b1b-99ad-4a7919c2b45e/android.debug.apk">
     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top" style="border-radius: 5px;width: 250px;">
         <i class="fa fa-download"></i> Download App
@@ -189,6 +370,7 @@ b {
    </p>
   <hr>
   <br>
+
 </div>
       <script>
 function myFunction() {
@@ -211,6 +393,8 @@ function openNav() {
       document.getElementById("main").style.marginLeft= "0";
       document.body.style.backgroundColor = "white";
     }
+
+
 </script>
 
 </body>
