@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/x-icon" href="Logo.png">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family:'Courier New', Courier, monospace}
@@ -246,6 +247,68 @@ b {
 
 .dropdown:hover .dropdown-content {display: block;}
 
+/*social media bar*/
+
+.me {
+  width: 500px;
+  margin: 90px auto;
+}
+.me p,
+.me h1 {
+  letter-spacing: 3px;
+  text-align: center;
+}
+.me p {
+  font-weight: 200;
+}
+.me span {
+  font-weight: bold;
+}
+.social {
+  position: fixed;
+  top: 100px;
+}
+.social ul {
+  padding: 0px;
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+.social ul li:hover {
+  transform: translate(110px, 0);
+  
+}
+.social ul li:hover a {
+  color:white;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: rgb(229, 229, 229);
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  transform: rotate(0deg);
+}
+
+
 </style>
 </head>
 <body>
@@ -254,22 +317,25 @@ b {
 
   <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
     <div class="bgimg">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <nav class="social">
+                <ul>
+                    <li style="background: rgba(0, 98, 255, 0.622);"><a href="">Twitter <i class="fa fa-twitter"></i></a></li>
+                  <li style="background:linear-gradient(#4f5bd5,#962fbf,#d62976,#fa7e1e,#feda75 );"><a href="https://www.instagram.com/myschoolwayapp/">istagram<i class="fa fa-instagram"></i></a></li>
+                  <li style="background: red;"><a href="">youtube <i class="fa fa-youtube"></i></a></li>
+                    </ul>
+            </nav>
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
         <ul class="menu__box">
-         <h3 style="margin-left: 5%;color:rgb(98, 0, 255);">უახლესი ვიდეოები</h2>
-          <center><hr style="width: 90%;border-style: groove;"></center>
-          <div id='scrolly'>
-         </div>
-   <center><hr style="width: 90%;border-style: groove;"></center>
-    <br>
-    <br>
-    <h3 style="margin-left: 5%;margin-top:-3%;color:rgb(98, 0, 255);">საგნობრივი საძიებელი</h2>
-
-  <div style="margin-left:5%">
+          <center>
+            <h3 style="color:rgb(98, 0, 255);">საგნობრივი საძიებელი</h2>
+          </center>
+   <center>
+  <div>
     <div class="dropdown">
       <button class="dropbtn" style="margin-left: 8%;">ფიზიკა</button>
       <div class="dropdown-content">
@@ -282,7 +348,58 @@ b {
         <a href="" onclick="alert('არხი მალე დაემატება')">კულონის კანონი</a>
       </div>
     </div>
-</ul>
+      <div class="dropdown">
+        <button class="dropbtn">მათემატიკა</button>
+        <div class="dropdown-content">
+          <a href="" onclick="alert('არხი მალე დაემატება')">არითმეტიკა</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">ალგებრა</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">გეომეტრია</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">ტრიგონომეტრია</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">სტატისტიკა</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">ალბათობა</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">ქიმია</button>
+        <div class="dropdown-content" style="width:190px">
+          <a href="" onclick="alert('არხი მალე დაემატება')">ატომის აღნაგობა</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">არაორგანული ქიმია</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">ქიმიური ბმები</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">რეაქციათა ტოლობების გათანაბრება</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">ბიოლოგია</button>
+        <div class="dropdown-content" style="width:170px">
+          <a href="" onclick="alert('არხი მალე დაემატება')">ატომის აღნაგობა</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">არაორგანული ქიმია</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">ქიმიური ბმები</a>
+          <a href="" onclick="alert('არხი მალე დაემატება')">რეაქციათა ტოლობების გათანაბრება</a>
+        </div>
+      </div>
+</center>
+<br>
+<br>
+<center>
+  <div>
+
+    <h3 style="color:rgb(98, 0, 255);">უახლესი ვიდეოები</h2>
+      <center><hr style="width: 90%;border-style: groove;"></center>
+      <div id='scrolly'>
+  <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Ltc2NBmI88o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  </div>
+</center>
+   <center><hr style="width: 90%;border-style: groove;"></center>
+    <br>
+    <br>
+
+      </ul>
             </div>
   
       </div>
@@ -339,7 +456,6 @@ b {
    </p>
   <hr>
   <br>
-
 </div>
       <script>
 function myFunction() {
