@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <link rel="icon" type="image/x-icon" href="Logo.png">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family:'Courier New', Courier, monospace}
@@ -125,7 +127,7 @@ b {
     }
 }
 
-/*Sidebar*/
+
 #menu__toggle {
   opacity: 0;
 }
@@ -210,8 +212,6 @@ b {
   white-space: nowrap
        
 }
-
-      
 
  iframe {
   margin: 20px 10px;
@@ -307,6 +307,60 @@ b {
 }
 
 
+
+
+
+
+
+.dropbtn1 {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn1 {
+  background-color: #2980B9;
+}
+
+
+input {
+    width: 88%;
+    border-radius: 4px;
+ }
+
+ input[type=text] {
+  border-radius: 4px;
+  height: 100px;
+}
 </style>
 </head>
 <body>
@@ -316,6 +370,26 @@ b {
   <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
     <div class="bgimg">
       <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <div class="dropup" style="bottom: 0;position: fixed;margin-left: 20px;">
+        <img src="message_button.png" style="width:22%;height:auto;">
+        <div class="dropup-content" style="border-radius: 10px;width: 65%;height: 340px;background-color: rgb(249, 249, 249);">
+          <br>
+          <center> <h1 style="font-size: 35px;color: rgb(98, 0, 255);"><b>Myschoolway</b></h1></center>
+       <center>
+        <hr style="width:80%;">
+       </center>
+          <form action="https://formsubmit.co/myschoolwayapp@gmail.com
+          " method="POST">
+            <center>
+              <input type="email" name="email" required placeholder="შეიყვანეთ თქვენი E-mail">
+            </center>
+            <center>
+              <input type="text" name="name" required style="margin-top: 2.5%;">
+            </center>
+            <button type="submit" style="margin-left: 6%;margin-top: 2%;">Send</button>
+       </form>
+        </div>
+      </div>
       <nav class="social">
                 <ul>
                     <li style="background: rgba(0, 98, 255, 0.622);"><a href="https://twitter.com/MyschoolwayApp">Twitter <i class="fa fa-twitter"></i></a></li>
@@ -391,13 +465,14 @@ b {
    <center><hr style="width: 90%;border-style: groove;"></center>
     <br>
     <br>
-
       </ul>
-            </div>
-  
-      </div>
+     </div>
+  </div>
+</div>
+    </div>
+   </div>
   </nav>
-
+  
 <div class="w3-main w3-padding-large" style="margin-left:40%">
 
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
@@ -448,6 +523,7 @@ b {
    </a>
    </p>
   <hr>
+  <br>
   <br>
 </div>
       <script>
