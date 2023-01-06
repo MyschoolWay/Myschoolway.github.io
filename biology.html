@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბიოლოგია • Biology</title>
+    <style>
+ body {
+    margin: 0;
+ }
+
+@media only screen and (min-width:800px) {
+    .left {
+    width: 35%;
+    float: left;
+    background-color:#F7F9F9;
+    height: 1300px;
+ }
+
+     .right {
+    width: 65%;
+    float: right;
+    background-color:white;
+    height: 900px;
+ }
+}
+
+@media only screen and (max-width:350px) {
+  b {
+    font-size:80%;
+    color: rgb(98, 0, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
+
+b {
+  color: rgb(98, 0, 255);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: #ccc;
+  position:fixed;
+}
+
+.progress-bar {
+  height: 3px;
+  background: rgb(98, 0, 255);
+  width: 0%;
+  position:fixed;
+}
+
+
+
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 85%;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+/* CSS */
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: rgb(98, 0, 255);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 85%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+iframe {
+  width:80%;
+  height:400px;
+}
+
+@media only screen and (max-width:600px) {
+  iframe {
+  width:95%;
+  height:250px;
+}
+}
+ </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>  
+ <div class="left">
+    <br>
+<center>
+ <a href="index.html"><button class="button-9" role="button" style="margin-top: 2%;">მთავარი გვერდი</button></a>
+</center>
+    <hr style="width: 90%;border-color:#ffffff;">
+    <br>
+<center>
+   <a href="#" style="text-decoration: none;"><button class="button-6" role="button">ცოცხალი არსებები ჩვენს ირგვლივ და მათი კლასიფიკაცია</button></a>
+   <a href="#" style="text-decoration: none;"><button class="button-6" role="button">უჯრედები და მათი ტიპები</button></a>
+   <a href="#" style="text-decoration: none;"><button class="button-6" role="button">ადამიანის ანატომია</button></a>
+   <a href="#" style="text-decoration: none;"><button class="button-6" role="button">ორგანული ნივთიერებები (ცილები,ცხიმები,ნახშირწყლები და რნმ)</button></a>
+   <a href="#" style="text-decoration: none;"><button class="button-6" role="button">უჯრედული სუნთქვა</button></a>
+  </center>
+ </div>
+ <div class="right">
+    <br>
+    <br>
+ <h1 style="font-size: 35px;color: rgb(98, 0, 255);margin-left: 5%;"><b>ბიოლოგია•Biology</b></h1>
+   
+ <p style="margin-left: 5%;">სალამი👋
+    <br> blah blah blah blah blah blah blah blah blah blah blah blah blah bah blah blah blah blah blah blah blahblahblahblah blah blah blah blah
+    blah blah blah blah blah blah blah blah blah blah blah blah blah bah blah blah blah blah blah blah blahblahblahblah blah blah blah blah!</p>
+    <hr style="width: 90%;">
+    <br>
+ <center>
+    <iframe src="https://www.youtube.com/embed/lOyROw9m-sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </center> 
+ <br>
+ <br>
+ <hr style="width: 90%;">
+ <h1 style="font-size: 30px;color: rgb(98, 0, 255);margin-left: 5%;"><b>სასწავლო გეგმა</b></h1>
+ <ul>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+    <li>- - - - - - - - - - - - - - </li>
+ </ul>
+ <br>
+ <br>
+ <br>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+</body>
+</html>
