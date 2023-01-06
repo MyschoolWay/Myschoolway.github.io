@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <link rel="icon" type="image/x-icon" href="Logo.png">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family:'Courier New', Courier, monospace}
@@ -21,7 +19,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family:'Courier New', Courier, monospace}
   background-image: url('Background.png');
   min-height: 100%;
 }
-
 
 .dropdown {
   position: relative;
@@ -282,17 +279,19 @@ b {
 }
 .social ul li:hover {
   transform: translate(110px, 0);
-  
 }
+
 .social ul li:hover a {
   color:white;
 }
+
 .social ul li:hover i {
   color: #fff;
   background: rgba(0, 0, 0, 0.36);
   transform: rotate(360deg);
   transition: all 1s;
 }
+
 .social ul li i {
   margin-left: 10px;
   color: rgb(229, 229, 229);
@@ -305,11 +304,6 @@ b {
   background: #ffffff;
   transform: rotate(0deg);
 }
-
-
-
-
-
 
 
 .dropbtn1 {
@@ -351,7 +345,6 @@ b {
   background-color: #2980B9;
 }
 
-
 input {
     width: 88%;
     border-radius: 4px;
@@ -361,12 +354,38 @@ input {
   border-radius: 4px;
   height: 100px;
 }
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+	transition: all 0.5s ease-in-out;
+}
+
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:88%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+}
+
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
 </style>
 </head>
 <body>
-
-  
-
   <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
     <div class="bgimg">
       <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -378,11 +397,12 @@ input {
        <center>
         <hr style="width:80%;">
        </center>
-          <form action="https://formsubmit.co/myschoolwayapp@gmail.com
-          " method="POST">
+          <form action="https://formsubmit.co/myschoolwayapp@gmail.com" method="POST">
+          <div class="input-container">
             <center>
               <input type="email" name="email" required placeholder="შეიყვანეთ თქვენი E-mail">
             </center>
+          </div>
             <center>
               <input type="text" name="name" required style="margin-top: 2.5%;">
             </center>
@@ -403,73 +423,58 @@ input {
           <span></span>
         </label>
         <ul class="menu__box">
-          <center>
-            <h3 style="color:rgb(98, 0, 255);">საგნობრივი საძიებელი</h2>
-          </center>
-   <center>
-  <div>
-    <div class="dropdown">
-      <button class="dropbtn" style="margin-left: 8%;">ფიზიკა</button>
-      <div class="dropdown-content">
-        <a href="" onclick="alert('არხი მალე დაემატება')">კუთრი სითბოტევადობა</a>
-        <a href="" onclick="alert('არხი მალე დაემატება')">ერთგანზომილებიანი მოძრაობა</a>
-        <a href="" onclick="alert('არხი მალე დაემატება')">ორგანზომილებიანი მოძრაობა</a>
-        <a href="" onclick="alert('არხი მალე დაემატება')">მოძრაობა წრეწირზე</a>
-        <a href="" onclick="alert('არხი მალე დაემატება')">მოძრაობა წრეწირზე</a>
-        <a href="" onclick="alert('არხი მალე დაემატება')">ელექტრული ველი</a>
-        <a href="" onclick="alert('არხი მალე დაემატება')">კულონის კანონი</a>
-      </div>
-    </div>
-      <div class="dropdown">
-        <button class="dropbtn">მათემატიკა</button>
-        <div class="dropdown-content">
-          <a href="" onclick="alert('არხი მალე დაემატება')">არითმეტიკა</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">ალგებრა</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">გეომეტრია</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">ტრიგონომეტრია</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">სტატისტიკა</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">ალბათობა</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">ქიმია</button>
-        <div class="dropdown-content" style="width:190px">
-          <a href="" onclick="alert('არხი მალე დაემატება')">ატომის აღნაგობა</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">არაორგანული ქიმია</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">ქიმიური ბმები</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">რეაქციათა ტოლობების გათანაბრება</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">ბიოლოგია</button>
-        <div class="dropdown-content" style="width:170px">
-          <a href="" onclick="alert('არხი მალე დაემატება')">ატომის აღნაგობა</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">არაორგანული ქიმია</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">ქიმიური ბმები</a>
-          <a href="" onclick="alert('არხი მალე დაემატება')">რეაქციათა ტოლობების გათანაბრება</a>
-        </div>
-      </div>
-</center>
-<br>
-<br>
-<center>
-  <div>
-
-    <h3 style="color:rgb(98, 0, 255);">უახლესი ვიდეოები</h2>
-      <center><hr style="width: 90%;border-style: groove;"></center>
+ <!--ვიდეოების ჩამატება (iframe)-->
       <div id='scrolly'>
        
       </div>
-  </div>
-</center>
-   <center><hr style="width: 90%;border-style: groove;"></center>
-    <br>
-    <br>
+<!--/ვიდეოების ჩამატება/-->
+<a href="physics.html" style="text-decoration:none;"><h1 style="font-size: 30px;color: rgb(98, 0, 255);margin-left: 5%;"><b>ფიზიკა</b></h1></a>
+    <ul>
+      <a href="#" style="text-decoration: none;"><li>რატომ უნდა ვისწავლოთ ფიზიკა?</li></a>
+    <a href="#">
+      <p style="font-size: 20px;color: rgb(98, 0, 255);">ფიზიკის საფუძვლები<p>
+    </a>
+      <ul style="margin-left: -3%;">
+        <li>მოძრაობა</li>
+        <li>ძალები</li>
+        <li>ნიუტონისეული ფიზიკა</li>
+       </ul>
+       <hr style="border-top: 2.5px dashed rgb(164, 0, 0);width: 80%;">
       </ul>
-     </div>
-  </div>
-</div>
-    </div>
+      <br>
+      <a href="chemistry.html" style="text-decoration:none;"><h1 style="font-size: 30px;color: rgb(98, 0, 255);margin-left: 5%;"><b>ქიმია</b></h1></a>
+      <ul>
+        <a href="#" style="text-decoration: none;"><li>რატომ უნდა ვისწავლოთ ქიმია?</li></a>
+      <a href="#">
+        <p style="font-size: 20px;color: rgb(98, 0, 255);">ქიმიის საფუძვლები<p>
+      </a>
+        <ul style="margin-left: -3%;">
+          <li>ატომი</li>
+          <li>ქიმიური რეაქციები და მათი ტოლობების გათანაბრება (ლაუაზიეს კანონი)</li>
+          <li>ფუძეები,ოქსიდები,მჟავები და მარილები</li>
+          <li>ელექტრონული გარსის აგებულება</li>
+         </ul>
+         <hr style="border-top: 2.5px dashed rgb(164, 0, 0);width: 80%;">
+        </ul>
+        <br>
+       <a href="biology.html" style="text-decoration: none;">
+        <h1 style="font-size: 30px;color: rgb(98, 0, 255);margin-left: 5%;"><b>ბიოლოგია</b></h1>
+       </a>
+        <ul>
+          <a href="#" style="text-decoration: none;"><li>რატომ უნდა ვისწავლოთ ბიოლოგია?</li></a>
+        <a href="#">
+          <p style="font-size: 20px;color: rgb(98, 0, 255);">ბიოლოგიის საფუძვლები<p>
+        </a>
+          <ul style="margin-left: -3%;">
+            <li>ცოცხალი ორგანიზმები ჩვენს ირგვლივ</li>
+            <li>უჯრედი (მარტივად)</li>
+            <li>ადამიანის ანატომია</li>
+            <li>ლიპიდები,ცილები,ცხიმები და ნახშირწყლები</li>
+            <li>უჯრედი (რთულად)</li>
+           </ul>
+           <hr style="border-top: 2.5px dashed rgb(164, 0, 0);width: 80%;">
+          </ul> 
+</ul>
    </div>
   </nav>
   
@@ -527,6 +532,10 @@ input {
   <br>
 </div>
       <script>
+
+
+
+
 function myFunction() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
@@ -536,19 +545,21 @@ function myFunction() {
   }
 }
 
+
+
 function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
+
     
+
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
       document.body.style.backgroundColor = "white";
     }
-
-
 </script>
 
 </body>
